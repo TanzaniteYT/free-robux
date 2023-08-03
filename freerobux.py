@@ -30,16 +30,16 @@ username = input("What's your username on roblox? (case sensitive and NOT your d
 
 
 
-inputrobux = get_numeric_input("how much robux do you currently have? ") # asks how much robux you have
+inputrobux = get_numeric_input("How much robux do you currently have? ") # asks how much robux you have
 
 robux = robux = inputrobux # this makes the robux variable equal the amount of robux you have currently, this is just in case the program bugs and wipes your robux.
-print("you have", robux,"robux.")
+print("You have", robux,"robux.")
 
 print("connecting to www.roblox.com...")
 time.sleep(1.34)
 website = 'https://www.roblox.com/'  # connects to roblox.com
 port = 25565 
-print("connected!")
+print("Connected!")
 
 
 robuxyouwant = get_numeric_input("How much robux do you want? (we would not recommend big numbers.) ") # asks how much robux you want
@@ -52,13 +52,18 @@ else:
     print("Bugfix: We can only give 1 robux at a time because roblox will catch on to this.") # this gives robux
     robuxtotal = robux + inputrobux
     time.sleep(2)
-    print("giving", username,"robux...")
+    print("Giving", username,"robux...")
     for x in range(inputrobux, robuxyouwant):
         print(inputrobux, end="\r")
         inputrobux = inputrobux + 1
         time.sleep(random.random())
         
     else:
-        print("applying robux!")
+        print("Applying robux!")
         time.sleep(3)
-        print("robux should be done! heads up that you need to be logged out of all devices for this to work.")
+        print("Robux should be done! Heads up that you need to be logged out of all devices for this to work.")
+        time.sleep(4)
+        print("You can now close this terminal.")
+        keepterminalup = 0
+        while True:
+            keepterminalup = keepterminalup + 1
