@@ -26,7 +26,7 @@ def get_numeric_input(prompt): #this function checks if an input is a number or 
 #function time over
 robux = 0 #this creates robux as a variable
 
-username = input("what's your username on roblox? (case sensitive and NOT your display name) ")
+username = input("What's your username on roblox? (case sensitive and NOT your display name) ")
 
 
 
@@ -35,21 +35,21 @@ inputrobux = get_numeric_input("how much robux do you currently have? ") # asks 
 robux = robux = inputrobux # this makes the robux variable equal the amount of robux you have currently, this is just in case the program bugs and wipes your robux.
 print("you have", robux,"robux.")
 
-print("connecting to roblox.com...")
+print("connecting to www.roblox.com...")
 time.sleep(1.34)
-website = 'https://roblox.com'  # connects to roblox.com
+website = 'https://www.roblox.com/'  # connects to roblox.com
 port = 25565 
 print("connected!")
 
 
-robuxyouwant = get_numeric_input("how much robux do you want? (we would not reccomend big numbers.) ") # asks how much robux you want
+robuxyouwant = get_numeric_input("How much robux do you want? (we would not recommend big numbers.) ") # asks how much robux you want
 if robuxyouwant < inputrobux:
-    print("cant have less robux than you currently have.")
+    print("Can't have less robux than you currently have.")
 else:
     time.sleep(2)
     robuxtotal = robuxyouwant + inputrobux
-    print("getting your robux...")
-    print("bugfix: we can only give 1 robux at a time because roblox will catch on to this.") # this gives robux
+    print("Getting your robux...")
+    print("Bugfix: We can only give 1 robux at a time because roblox will catch on to this.") # this gives robux
     robuxtotal = robux + inputrobux
     time.sleep(2)
     print("giving", username,"robux...")
